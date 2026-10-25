@@ -29,5 +29,12 @@ cd build
 cmake -D32BLIT_DIR=/path/to/32blit-sdk/ ..
 ```
 
+After that, the Makefile in `build` will have a target for your game name (line 5 in CMakeLists.txt)
+```
+make jared-test-game
+```
+
+After that your executable will be in the build directory. You can just run it through the command line
+
 Platform/Editor specific insctuctions [can be found in the main 32blit repo](https://github.com/32blit/32blit-sdk#you-will-need)
 (For Visual Studio, you should follow the "Option 2" instructions, as the boilerplate does not contain a solution file)
